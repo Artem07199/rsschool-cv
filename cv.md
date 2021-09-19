@@ -1,4 +1,4 @@
-[rsschool-cv](https://hexlet.io)
+[rsschool-cv](https://artem07199.github.io/rsschool-cv/cv)
 # Artem Litasov
 ### Contacts
 * Phone: +375 (29) 640-36-34
