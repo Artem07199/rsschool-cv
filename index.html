@@ -4,8 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons8-resume-website-32.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-list-item"><a href="" class="list-item-link">Contacts</a></li>
+                    <li class="header-list-item"><a href="" class="list-item-link">Summary</a></li>
+                    <li class="header-list-item"><a href="" class="list-item-link">Skills</a></li>
+                    <li class="header-list-item"><a href="" class="list-item-link">Code</a></li>
+                    <li class="header-list-item"><a href="" class="list-item-link">Projects</a></li>
+                    <li class="header-list-item"><a href="" class="list-item-link">Education</a></li>
+                    <li class="header-list-item"><a href="" class="list-item-link">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="up-side">
+            <section class="section">
+                <img class="photo" src="./assets/icon.png" alt="photo">
+            </section>
+            <section class="section section-name">
+                <h1 class="section-name-text">Artem Litasov</h1>
+                <h2 class="section-title">Junior front-end developer</h2>
+            </section>
+        </div>
+        <div class="container sides">
+            <div class="leftside">
+                <section class="section">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="section-contacts-list">
+                        <li class="contacts-list-item">artemlitasov@gmail.com</li>
+                        <li class="contacts-list-item">+375 (29) 640-36-34</li>
+                        <li class="contacts-list-item">@tem0719</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="rightside">
+                <section class="section">
+                    <h2 class="section-title">Summary</h2>
+                    <p>I am purposeful and easy to train, ready to bring 
+                        any business to the end. I can easily maintain business and 
+                        professional contacts. I like to read professional 
+                        literature. I like to work and see the results of my work.</p>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-list-item">HTML</li>
+                        <li class="skills-list-item">Css</li>
+                        <li class="skills-list-item">JavaScript</li>
+                        <li class="skills-list-item">Git</li>
+                        <li class="skills-list-item">Figma</li>
+                    </ul>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Code</h2>
+                    <pre class="code-example">
+                        function headerScroll() {
+                            let headerPage = document.querySelector('.header-page');
+                            window.addEventListener('scroll', function() {
+                                if (window.pageYOffset > 0) {
+                                    headerPage.classList.add('is-active');
+                                } else {
+                                    headerPage.classList.remove('is-active');
+                                }
+                            });
+                        };
+                    </pre>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Projects</h2>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Education</h2>
+                    <ul class="educt-list">
+                        <li class="educt-list-item">Moscow Finance and Law University/Information systems and technologies</li>
+                        <li class="educt-list-item">Minsk State Mechanical and Technological Vocational College</li>
+                    </ul>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">English</h2>
+                    <ul class="eng-list">
+                        <li class="eng-list-item">English (A2)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer ">
+        <div class="footer-line container">
+            <div class="footer-git">
+                <a class="footer-git-link" href="https://github.com/Artem07199" target="_blank">Artem07199</a>
+            </div>
+            <div class="footer-year">© 2022 </div>
+            <div class="footer-rslogo">
+                <a href="https://rs.school/js/" target="_blank">
+                    <img class="footer-rslogo-img" src="assets/rss.svg" alt="school logo">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
