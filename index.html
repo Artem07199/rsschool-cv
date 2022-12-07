@@ -4,8 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons8-resume-website-32.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-list-item"><a href="#contacts" class="list-item-link">Contacts</a></li>
+                    <li class="header-list-item"><a href="#summary" class="list-item-link">Summary</a></li>
+                    <li class="header-list-item"><a href="#skills" class="list-item-link">Skills</a></li>
+                    <li class="header-list-item"><a href="#code" class="list-item-link">Code</a></li>
+                    <li class="header-list-item"><a href="#projects" class="list-item-link">Projects</a></li>
+                    <li class="header-list-item"><a href="#education" class="list-item-link">Education</a></li>
+                    <li class="header-list-item"><a href="#english" class="list-item-link">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="up-side">
+            <div class="block">
+                <img class="photo" src="./assets/icon.png" alt="photo">
+            </div>
+            <section class="block section-name">
+                <h1 class="section-name-text">Artem Litasov</h1>
+                <h2 class="section-title">Junior front-end developer</h2>
+            </section>
+        </div>
+        <div class="container sides">
+            <div class="leftside">
+                <section class="block" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="section-contacts-list">
+                        <li class="contacts-list-item location">Minsk, Belarus</li>
+                        <li class="contacts-list-item mail">Email: <a href="" class="contacts-link">artemlitasov@gmail.com</a></li>
+                        <li class="contacts-list-item git">Github: <a href="" class="contacts-link">Artem07199</a></li>
+                        <li class="contacts-list-item telegram">Telegram: <a href="" class="contacts-link">@tem0719</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="rightside">
+                <section class="block" id="summary">
+                    <h2 class="section-title title-bottom">Summary</h2>
+                    <p class="small-text">I am purposeful and easy to train, ready to bring 
+                        any business to the end. I can easily maintain business and 
+                        professional contacts. I like to read professional 
+                        literature. I like to work and see the results of my work.</p>
+                </section>
+                <section class="block" id="skills">
+                    <h2 class="section-title title-bottom">Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-list-item">HTML</li>
+                        <li class="skills-list-item">Css</li>
+                        <li class="skills-list-item">JavaScript</li>
+                        <li class="skills-list-item">Git</li>
+                        <li class="skills-list-item">Figma</li>
+                    </ul>
+                </section>
+                <section class="block" id="code">
+                    <h2 class="section-title title-bottom">Code</h2>
+                    <pre class="code-example">
+                        function headerScroll() {
+                            let headerPage = document.querySelector('.header-page');
+                            window.addEventListener('scroll', function() {
+                                if (window.pageYOffset > 0) {
+                                    headerPage.classList.add('is-active');
+                                } else {
+                                    headerPage.classList.remove('is-active');
+                                }
+                            });
+                        };
+                    </pre>
+                </section>
+                <section class="block" id="projects">
+                    <h2 class="section-title title-bottom">Projects</h2>
+                    <div class="block-project">
+                        <ul class="project-list">
+                            <li class="proj-list-item">
+                        <a href="https://artem07199-art-quize.netlify.app/" class="project-link" target="_blank">Art-quize</a>
+
+                            </li>
+                            <li class="proj-list-item">
+                        <a href="https://rslang-artem07199.netlify.app/" class="project-link" target="_blank">RS Lang</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="block" id="education">
+                    <h2 class="section-title title-bottom">Education</h2>
+                    <ul class="educt-list">
+                        <li class="educt-list-item">Moscow Finance and Law University/Information systems and technologies</li>
+                        <li class="educt-list-item">Minsk State Mechanical and Technological Vocational College</li>
+                    </ul>
+                </section>
+                <section class="block" id="english">
+                    <h2 class="section-title title-bottom">English</h2>
+                    <ul class="eng-list">
+                        <li class="eng-list-item">B1 - Pre-Intermediate</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer ">
+        <div class="footer-line container">
+            <div class="footer-git">
+                <a class="footer-git-link" href="https://github.com/Artem07199" target="_blank">Artem07199</a>
+            </div>
+            <div class="footer-year">© 2022 </div>
+            <div class="footer-rslogo">
+                <a href="https://rs.school/js/" target="_blank">
+                    <img class="footer-rslogo-img" src="assets/rss.svg" alt="school logo">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
