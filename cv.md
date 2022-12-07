@@ -29,5 +29,4 @@ function headerScroll() {
 * Moscow Finance and Law University/Information systems and technologies
 * Minsk State Mechanical and Technological Vocational College
 ### Language
-* English (A2)
-* Russian 
+* B1 - Pre-Intermediate
