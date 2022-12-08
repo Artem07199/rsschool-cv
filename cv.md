@@ -1,6 +1,5 @@
 # Artem Litasov
 ### Contacts
-* Phone: +375 (29) 640-36-34
 * Email: artemlitasov@gmail.com
 * GitHub: Artem07199
 ### About Me
