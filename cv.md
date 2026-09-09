@@ -16,3 +16,23 @@ Junior front-end developer with a strong foundation in HTML, CSS, Flexbox, CSS G
 * JAVASCRIPT
 * GIT
 * FIGMA
+
+## Code
+`function headerScroll() {
+                            let headerPage = document.querySelector('.header-page');
+                            window.addEventListener('scroll', function() {
+                                if (window.pageYOffset > 0) {
+                                    headerPage.classList.add('is-active');
+                                } else {
+                                    headerPage.classList.remove('is-active');
+                                }
+                            });
+                        };
+                    `
+
+## EDUCATION
+* Moscow Finance and Law University/Information systems and technologies
+* Minsk State Mechanical and Technological Vocational College
+
+## ENGLISH
+* B1 - Pre-Intermediate
