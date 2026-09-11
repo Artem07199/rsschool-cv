@@ -1,11 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Artem litasov</h1>
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header_navigation">
+        <li class="nav_item">Contacts</li>
+        <li class="nav_item">Summary</li>
+        <li class="nav_item">Skills</li>
+        <li class="nav_item">Code</li>
+        <li class="nav_item">Projects</li>
+        <li class="nav_item">Education</li>
+        <li class="nav_item">English</li>
+      </ul>
+    </header>
+    <main>
+      <div class="main_top">
+        <div class="avatar">
+          <img src="img/avatar.jpeg" alt="avatar" />
+        </div>
+        <div class="name">
+          <h1 class="name_top">Artem Litasov</h1>
+          <h2 class="name_down">Junior front-end developer</h2>
+        </div>
+      </div>
+      <div class="main_down">
+        <div class="left"></div>
+        <div class="right">
+          <div class="about">
+            <h3 class="about_heading">About me</h3>
+            <p>
+              Junior front-end developer with a strong foundation in HTML, CSS,
+              Flexbox, CSS Grid, and responsive web design. Experienced in using
+              Git and GitHub for version control and collaborating through
+              structured workflows. Detail-oriented and passionate about
+              building clean, accessible user interfaces and modern web
+              applications.
+            </p>
+          </div>
+          <div class="skills">
+            <h3 class="skills_heading">Skills</h3>
+            <ul class="skill_list">
+              <li class="skill_link">HTML</li>
+              <li class="skill_link">CSS</li>
+              <li class="skill_link">JavaScript</li>
+              <li class="skill_link">GIT</li>
+              <li class="skill_link">Figma</li>
+            </ul>
+          </div>
+          <div class="code">
+            <h3 class="code_heading">Code</h3>
+            <pre class="code-example">
+                        function headerScroll() {
+                            let headerPage = document.querySelector('.header-page');
+                            window.addEventListener('scroll', function() {
+                                if (window.pageYOffset > 0) {
+                                    headerPage.classList.add('is-active');
+                                } else {
+                                    headerPage.classList.remove('is-active');
+                                }
+                            });
+                        };
+                    </pre
+            >
+          </div>
+          <div class="project">
+            <h3 class="project_heading">Project</h3>
+            <ul class="project-list">
+              <li class="proj-list-item">
+                <a
+                  href="https://artem07199-art-quize.netlify.app/"
+                  class="project-link"
+                  target="_blank"
+                  >Art-quize</a
+                >
+              </li>
+              <li class="proj-list-item">
+                <a
+                  href="https://artem07199.github.io/shelter/shelter/index.html"
+                  class="project-link"
+                  target="_blank"
+                  >Shelter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="education">
+            <h3 class="education_heading">Education</h3>
+            <ul class="educt-list">
+              <li class="educt-list-item">
+                Moscow Finance and Law University/Information systems and
+                technologies
+              </li>
+              <li class="educt-list-item">
+                Minsk State Mechanical and Technological Vocational College
+              </li>
+            </ul>
+          </div>
+          <div class="eng"></div>
+          <h3 class="eng_heading">English</h3>
+          <ul class="eng-list">
+            <li class="eng-list-item">B1 - Pre-Intermediate</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul class="footer_nav">
+        <li class="footer_nav_link discord"></li>
+        <li class="footer_nav_link">2026</li>
+        <li class="footer_nav_link github"></li>
+      </ul>
+    </footer>
+  </body>
 </html>
