@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icons8-resume-website-32.png">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
@@ -10,19 +11,19 @@
     <div class="page">
       <header class="header">
         <ul class="header_navigation">
-          <li class="nav_item">Contacts</li>
-          <li class="nav_item">Summary</li>
-          <li class="nav_item">Skills</li>
-          <li class="nav_item">Code</li>
-          <li class="nav_item">Projects</li>
-          <li class="nav_item">Education</li>
-          <li class="nav_item">English</li>
+          <li class="nav_item"><a href="#cont">Contacts</a></li>
+          <li class="nav_item"><a href="#abo">About</a></li>
+          <li class="nav_item"><a href="#ski">Skills</a></li>
+          <li class="nav_item"><a href="#cod">Code</a></li>
+          <li class="nav_item"><a href="#proj">Projects</a></li>
+          <li class="nav_item"><a href="#edu">Education</a></li>
+          <li class="nav_item"><a href="#engl">English</a></li>
         </ul>
       </header>
       <main>
         <div class="main_top">
           <div class="top_left">
-            <img class="avatar" src="img/avatar.jpeg" alt="avatar" />
+            <img class="avatar" src="img/avatar.jpeg" alt="avatar">
           </div>
           <div class="name">
             <h1 class="name_top">Artem Litasov</h1>
@@ -31,17 +32,38 @@
         </div>
         <div class="main_down">
           <div class="left">
-              <h3 class="left_heding">Contacts</h3>
-                    <ul class="left_list">
-                        <li class="left_link location">Minsk, Belarus</li>
-                        <li class="left_link mail">Email: <a href="" class="contacts-link">artemlitasov@gmail.com</a></li>
-                        <li class="cleft_link git">Github: <a href="" class="contacts-link">Artem07199</a></li>
-                        <li class="left_link telegram">Telegram: <a href="" class="contacts-link">@tem0719</a></li>
-                    </ul>
+            <h3 class="left_heding" id="cont">Contacts</h3>
+            <ul class="left_list">
+              <li class="left_link location">Minsk, Belarus</li>
+              <li class="left_link mail">
+                Email:
+                <a href="mailto:" class="contacts-link"
+                  >artemlitasov@gmail.com</a
+                >
+              </li>
+              <li class="cleft_link git">
+                Github:
+                <a
+                  href="https://github.com/Artem07199"
+                  class="contacts-link"
+                  target="_blank"
+                  >Artem07199</a
+                >
+              </li>
+              <li class="left_link telegram">
+                Telegram:
+                <a
+                  href="https://web.telegram.org/"
+                  class="contacts-link"
+                  target="_blank"
+                  >@tem0719</a
+                >
+              </li>
+            </ul>
           </div>
           <div class="right">
             <div class="about">
-              <h3 class="about_heading">About me</h3>
+              <h3 class="about_heading" id="abo">About me</h3>
               <p>
                 Junior front-end developer with a strong foundation in HTML,
                 CSS, Flexbox, CSS Grid, and responsive web design. Experienced
@@ -52,7 +74,7 @@
               </p>
             </div>
             <div class="skills">
-              <h3 class="skills_heading">Skills</h3>
+              <h3 class="skills_heading" id="ski">Skills</h3>
               <ul class="skill_list">
                 <li class="skill_link">HTML</li>
                 <li class="skill_link">CSS</li>
@@ -62,23 +84,24 @@
               </ul>
             </div>
             <div class="code">
-              <h3 class="code_heading">Code</h3>
-              <pre class="code-example">
-        function headerScroll() {
-            let headerPage = document.querySelector('.header-page');
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 0) {
-                    headerPage.classList.add('is-active');
-                } else {
-                    headerPage.classList.remove('is-active');
-                }
-            });
-        };
-                    </pre
-              >
+              <h3 class="code_heading" id="cod">Code</h3>
+              <pre><code>
+    function findLongestWord(sentence) {
+    const words = sentence.split(' ');
+    let longestWord = '';
+
+    for (const word of words) {
+        if (word.length > longestWord.length) {
+        longestWord = word;
+        }
+    }
+
+    return longestWord;
+    }
+            </code></pre>
             </div>
             <div class="project">
-              <h3 class="project_heading">Projects</h3>
+              <h3 class="project_heading" id="proj">Projects</h3>
               <ul class="project-list">
                 <li class="proj-list-item">
                   <a
@@ -99,7 +122,7 @@
               </ul>
             </div>
             <div class="education">
-              <h3 class="education_heading">Education</h3>
+              <h3 class="education_heading" id="edu">Education</h3>
               <ul class="educt-list">
                 <li class="educt-list-item">
                   Moscow Finance and Law University/Information systems and
@@ -110,19 +133,27 @@
                 </li>
               </ul>
             </div>
-            <div class="eng"></div>
-            <h3 class="eng_heading">English</h3>
-            <ul class="eng-list">
-              <li class="eng-list-item">B1 - Pre-Intermediate</li>
-            </ul>
+            <div class="eng" id="engl">
+              <h3 class="eng_heading">English</h3>
+              <ul class="eng-list">
+                <li class="eng-list-item">B1 - Pre-Intermediate</li>
+              </ul>
+            </div>
           </div>
         </div>
       </main>
       <footer>
         <ul class="footer_nav">
-          <li class="footer_nav_link discord"></li>
+          <li class="footer_nav_link school">
+            <a
+              href="https://rs.school/"
+              target="_blank"
+            >
+              <img src="img/rs-school-logo.svg" alt="rs-school" >
+            </a>
+          </li>
           <li class="footer_nav_link">2026</li>
-          <li class="footer_nav_link github"></li>
+          <li class="footer_nav_link github"><a href="https://github.com/Artem07199" target="_blank">Artem07199</a></li>
         </ul>
       </footer>
     </div>
